@@ -1,16 +1,146 @@
-# React + Vite
+# Country Explorer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive Country Explorer application built with React and Tailwind CSS.
 
-Currently, two official plugins are available:
+This project fetches real-time country data from the REST Countries API and allows users to search and explore countries with a clean and interactive UI.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+# Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Fetch country data from REST Countries API
+-  Real-time country search functionality
+-  Fast filtering using `useMemo`
+-  Auto-focus search input using `useRef`
+-  Fully responsive design
+-  Modern UI with Tailwind CSS
+-  Reusable React components
+-  Loading state handling
+-  Error handling for failed API requests
+-  Empty search result handling
+-  Smooth hover animations and transitions
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# Tech Stack
+
+- React
+- JavaScript (ES6+)
+- Tailwind CSS
+- REST Countries API
+- Vite
+
+---
+
+# Project Structure
+
+```bash
+src/
+│
+├── components/
+│   ├── CountryCard.jsx
+│   ├── CountryList.jsx
+│   └── SearchBar.jsx
+│
+├── App.jsx
+├── main.jsx
+└── index.css
+```
+
+---
+
+#  Screenshots
+
+## Home Page
+
+Add screenshots here.
+
+```bash
+public/screenshots/home.png
+```
+
+---
+
+# Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/harishkodimala/Country-Explorer.git
+```
+
+Navigate to the project folder:
+
+```bash
+cd Country-Explorer
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+---
+
+#  API Used
+
+REST Countries API:
+
+```bash
+https://restcountries.com/v3.1/all
+```
+
+---
+
+#  Concepts Practiced
+
+- React Hooks
+  - `useState`
+  - `useEffect`
+  - `useMemo`
+  - `useRef`
+- API Fetching
+- Conditional Rendering
+- Component Reusability
+- Dynamic Rendering using `.map()`
+- Tailwind CSS Styling
+- Responsive UI Design
+- Error and Loading State Management
+
+---
+
+#  UI Features
+
+- Glassmorphism-inspired country cards
+- Smooth hover animations
+- Responsive grid layout
+- Modern search bar design
+- Clean typography and spacing
+
+---
+
+#  Future Improvements
+
+- Dark mode
+- Filter countries by region
+- Sort countries by population
+- Favorite countries feature
+- Country details page with React Router
+- Pagination or infinite scrolling
+- Debounced search optimization
+
+---
+
+# Author
+
+Created by Harish Kodimala
+
+GitHub:
+https://github.com/harishkodimala
